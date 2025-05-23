@@ -1,0 +1,73 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+    width: 20%; 
+    min-width: 200px;
+    height: 90%;
+    min-height: 300px;
+
+    border-radius: 2rem;
+
+    background-color: #FF8427;
+}
+
+.beerTitle {
+    font-weight: bolder;
+    text-align: center;
+    height: 15%;
+    color: black;
+    margin: 0 1rem;
+}
+
+.beerPrice {
+    font-weight: normal;
+    text-align: center;
+    font-size: small;
+    color: black;
+
+    margin: 6% 0;
+}
+
+.beerImageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    width: 80%;
+    height: 40%;
+    margin: 5% 10%;
+
+    border-radius: 2rem;
+}
+
+.beerImage {
+    height: 100%;
+    width: auto;
+}
+
+.beerControlsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5% 0;
+    
+    gap: 15px;
+    box-sizing: border-box;
+}
+
+.inputNumber {
+    width: 40%;
+    text-align: center;
+}
+
+.decIncButton{
+    width: 30px;
+    text-align: center;
+}
+
+.addToCartButton {
+    height: 10%;
+    width: fit-content;
+    margin: 0 auto 5%;
+}

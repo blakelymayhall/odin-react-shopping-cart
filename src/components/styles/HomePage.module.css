@@ -1,0 +1,18 @@
+.homePage {
+    padding: 0 20px;
+}
+
+.featuredTitle {
+    font-size: x-large;
+    padding-top: 3rem;
+}
+
+.beerContainer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    height: 50vh;
+    gap: 20px;
+}

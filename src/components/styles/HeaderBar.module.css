@@ -1,0 +1,26 @@
+.headerBar {
+    position: fixed;
+    box-sizing: border-box; 
+
+    width: 100vw;
+    height: 3rem;
+    padding: 0 20px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: #1E212B;
+    border-bottom: medium solid #4D8B31;
+}
+
+.logo {
+    text-align: center;
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.linkBox {
+    display: flex;
+    gap: 20px;
+}
