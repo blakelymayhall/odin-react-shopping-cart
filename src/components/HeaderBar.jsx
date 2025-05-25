@@ -14,9 +14,9 @@ function HeaderBar({ toggleCartWindow }) {
                     <Link to="/store" className={styles.logo}>
                         Store
                     </Link>
-                    <Link className={styles.logo} onClick={toggleCartWindow}>
+                    <p className={styles.logo} onClick={toggleCartWindow}>
                         Cart
-                    </Link>
+                    </p>
                 </div>
             </div>
         </>

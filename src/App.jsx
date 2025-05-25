@@ -10,11 +10,6 @@ function App() {
     const [cart, setCart] = useState([]);
     const [cartIsOpen, setCartIsOpen] = useState(false);
 
-    const toggleCartWindow = () => {
-        console.log(cart);
-        setCartIsOpen(!cartIsOpen);
-    };
-
     useEffect(() => {
         fetch("https://api.sampleapis.com/beers/ale")
             .then((res) => res.json())
@@ -34,17 +29,38 @@ function App() {
             });
     }, []);
 
+    const toggleCartWindow = () => {
+        setCartIsOpen(!cartIsOpen);
+    };
+
     const appendToCart = (beers) => {
         let cartCopy = [...cart];
         cartCopy.push(...beers);
         setCart(cartCopy);
     };
 
+    const clearCart = () => {
+        setCart([]);
+    };
+
+    const removeFromCart = (beer) => {
+        let cartCopy = [...cart];
+        const indexToRemove = cartCopy.lastIndexOf(beer);
+        cartCopy.splice(indexToRemove, 1);
+        setCart(cartCopy);
+    };
+
     return (
         <>
             <HeaderBar toggleCartWindow={toggleCartWindow} />
+            <CartWindow
+                cart={cart}
+                toggleCartWindow={toggleCartWindow}
+                cartIsOpen={cartIsOpen}
+                clearCart={clearCart}
+                removeFromCart={removeFromCart}
+            />
             <Outlet context={{ appendToCart, beerList }} />
-            <CartWindow cart={cart} toggleCartWindow={toggleCartWindow} cartIsOpen={cartIsOpen} />
         </>
     );
 }

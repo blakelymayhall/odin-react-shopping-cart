@@ -1,10 +1,22 @@
 .homePage {
-    padding: 0 20px;
+    padding: 5vh 10vh;
+}
+
+.homeSection {
+    margin: 5rem 0;
+    background-color: #235789;
+    border-radius: 30px;
+    min-height: 400px;
+    min-width: fit-content;
 }
 
 .featuredTitle {
     font-size: x-large;
-    padding-top: 3rem;
+    padding: 1rem;
+    padding-bottom: none;
+    color: #F1D302;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 .beerContainer{
@@ -14,5 +26,7 @@
     justify-content: space-evenly;
 
     height: 50vh;
+    min-height: fit-content;
     gap: 20px;
+    margin: 0 2rem;
 }

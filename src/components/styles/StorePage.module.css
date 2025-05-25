@@ -1,10 +1,13 @@
 .storePage {
-    padding: 0 20px;
+    padding: 5vh 10vh;
 }
 
 .featuredTitle {
     font-size: x-large;
     padding-top: 3rem;
+    color: black;
+    font-weight: bolder;
+    text-decoration: underline;
 }
 
 .beerContainer{

@@ -9,25 +9,9 @@
 
     border-radius: 2rem;
 
-    background-color: #FF8427;
+    background-color: #FDFFFC;
 }
 
-.beerTitle {
-    font-weight: bolder;
-    text-align: center;
-    height: 15%;
-    color: black;
-    margin: 0 1rem;
-}
-
-.beerPrice {
-    font-weight: normal;
-    text-align: center;
-    font-size: small;
-    color: black;
-
-    margin: 6% 0;
-}
 
 .beerImageContainer {
     display: flex;
@@ -44,6 +28,22 @@
 .beerImage {
     height: 100%;
     width: auto;
+}
+
+.beerTitle {
+    font-weight: bolder;
+    text-align: center;
+    height: 4em;
+    max-height: 4em;
+    color: black;
+    margin: 0 5px;
+}
+
+.beerPrice {
+    font-weight: normal;
+    text-align: center;
+    font-size: small;
+    color: black;
 }
 
 .beerControlsContainer {

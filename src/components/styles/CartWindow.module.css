@@ -1,6 +1,6 @@
 .cartWindow {
   position: fixed;
-  top: 3rem;
+  top: 4rem;
   right: 0;
   width: 28vw;
   height: 45vh;
@@ -9,9 +9,13 @@
   transform: translateX(0%);
   transition: transform 0.3s ease-in-out;
   z-index: 1000;
-  padding: 1rem;
+  padding: 2rem;
 
-  background-color: #1E212B;;
+  background-color: #235789;
+  border: medium solid #4D8B31;
+  border-top: none;
+
+  overflow-y: scroll;
 }
 
 .cartWindow.show {
@@ -22,13 +26,64 @@
   transform: translateX(100%);
 }
 
-.cartRow{
+.closeCart {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  aspect-ratio: 1 / 1;
+  max-width: fit-content;
+  min-width: fit-content;
+}
+
+.cartRow {
+    min-height: fit-content;
+    max-height: 10%;
+}
+
+.totalRow {
+    margin-top: 10%;
+    min-height: fit-content;
+    max-height: 10%;
+}
+
+.cartRowContent{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    gap: 3%
 }
 
-.beerImage {
-    height: 100%;
-    width: auto;
+.beerName{
+  width: 60%;
+}
+
+.beerPrice{
+  width: 25%;
+}
+
+.deleteBeer{
+  aspect-ratio: 1 / 1;
+  max-width: fit-content;
+  min-width: fit-content;
+  text-align: center;
+  margin: auto auto;
+}
+
+.separator{
+ width: 90%;
+ height: 2px;
+ justify-content: center;
+ background-color: gray; 
+}
+
+.emptyCartMessage {
+  text-align: center;
+  margin: auto;
+  margin-top: -2rem;
+  font-size: x-large;
+}
+
+.completePurchase {
+  margin: 1rem auto;
 }

@@ -40,26 +40,32 @@ function HomePage() {
     return (
         <>
             <div className={style.homePage}>
-                <p className={style.featuredTitle}>Featured Beers</p>
-                <div className={style.beerContainer}>
-                    {featuredBeers &&
-                        featuredBeers.map((beer) => {
-                            return <BeerCard key={beer.id} beer={beer} appendToCart={appendToCart} />;
-                        })}
+                <div className={style.homeSection}>
+                    <p className={style.featuredTitle}>Featured Beers</p>
+                    <div className={style.beerContainer}>
+                        {featuredBeers &&
+                            featuredBeers.map((beer) => {
+                                return <BeerCard key={beer.id} beer={beer} appendToCart={appendToCart} />;
+                            })}
+                    </div>
                 </div>
-                <p className={style.featuredTitle}>Highly Rated Beers</p>
-                <div className={style.beerContainer}>
-                    {highlyRatedBeers &&
-                        highlyRatedBeers.map((beer) => {
-                            return <BeerCard key={beer.id} beer={beer} appendToCart={appendToCart} />;
-                        })}
+                <div className={style.homeSection}>
+                    <p className={style.featuredTitle}>Highly Rated Beers</p>
+                    <div className={style.beerContainer}>
+                        {highlyRatedBeers &&
+                            highlyRatedBeers.map((beer) => {
+                                return <BeerCard key={beer.id} beer={beer} appendToCart={appendToCart} />;
+                            })}
+                    </div>
                 </div>
-                <p className={style.featuredTitle}>Budget Beers</p>
-                <div className={style.beerContainer}>
-                    {budgetBeers &&
-                        budgetBeers.map((beer) => {
-                            return <BeerCard key={beer.id} beer={beer} appendToCart={appendToCart} />;
-                        })}
+                <div className={style.homeSection}>
+                    <p className={style.featuredTitle}>Budget Beers</p>
+                    <div className={style.beerContainer}>
+                        {budgetBeers &&
+                            budgetBeers.map((beer) => {
+                                return <BeerCard key={beer.id} beer={beer} appendToCart={appendToCart} />;
+                            })}
+                    </div>
                 </div>
             </div>
         </>

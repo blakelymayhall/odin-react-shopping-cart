@@ -11,10 +11,6 @@ const routes = [
             { path: "store", element: <StorePage /> },
         ],
     },
-    {
-        path: "store",
-        element: <StorePage />,
-    },
 ];
 
 export default routes;

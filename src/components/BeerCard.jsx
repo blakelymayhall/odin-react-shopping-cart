@@ -4,7 +4,7 @@ import style from "./styles/BeerCard.module.css";
 import fallbackImage from "../assets/draught-beer-png-mug.jpg";
 
 function BeerCard({ beer, appendToCart }) {
-    const [input, setInput] = useState(0);
+    const [input, setInput] = useState(1);
 
     if (!beer) return null;
 
